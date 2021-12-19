@@ -6,10 +6,9 @@ FLAGS=-g -Wall
 
 all: stringProg
 
-stringProg: $(OBJECT_MAIN) libString
+stringProg: $(OBJECT_MAIN) libString.a
 	$(CC) $(FLAGS) -o stringProg $(OBJECT_MAIN) libString.a 
 
-libString: libString.a
 libString.a: $(OBJECT_stringFunctions) 
 	$(AR) -rcs libString.a $(OBJECT_stringFunctions) 
 
