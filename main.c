@@ -22,10 +22,10 @@ int main(){
     wordLen = strlen(word);
     textLen = strlen(text);
 
-    printf("%s\n", word);
-    printf("%s\n", text);
-    printf("%d\n", wordLen);
-    printf("%d\n", textLen);
+    // printf("%s\n", word);
+    // printf("%s\n", text);
+    // printf("%d\n", wordLen);
+    // printf("%d\n", textLen);
     
     printf("Gematria Sequences: ");
     gematricSeq(word, text, wordLen, textLen);
@@ -35,8 +35,6 @@ int main(){
     
     printf("\nAnagram Sequences: ");
     anagramSeq(word, text, wordLen, textLen);
-
-    printf("\n");
 
     return 0;
 }
